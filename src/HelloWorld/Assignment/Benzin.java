@@ -17,6 +17,6 @@ public class Benzin {
 
         AverageConsumptionPer100 = (UsedFuel / DistanceTraveled) * 100;
 
-        System.out.printf("Durchschnittsverbrauch: %s l/100km \n", String.format("%.2f", AverageConsumptionPer100));
+        System.out.printf("Durchschnittsverbrauch: %.2f l/100km \n", AverageConsumptionPer100);
     }
 }
