@@ -17,6 +17,6 @@ public class Summe
 
         Sum = Num1 + Num2;
 
-        System.out.printf("Summe von %s + %s ist: %s", Num1, Num2, Sum);
+        System.out.printf("Summe von %s + %s ist: %s \n", Num1, Num2, Sum);
     }
 }
