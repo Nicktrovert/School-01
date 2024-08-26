@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Benzin {
 
-    public static Scanner scanner = new Scanner(System.in);
+    public Scanner scanner = new Scanner(System.in);
 
-    public static void Run(){
+    public void Run(){
         double UsedFuel, AverageConsumptionPer100, DistanceTraveled;
 
         System.out.println("Gebe den verbrauchten Kraftstoff ein: ");

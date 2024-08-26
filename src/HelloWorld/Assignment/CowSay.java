@@ -4,7 +4,7 @@ public class CowSay {
     /*
      Prints a ASCII Drawing of a cow saying "Java rocks!" to the console.
      */
-    public static void Run(){
+    public void Run(){
         System.out.println("   ______________\n"+
                 "  <  Java rocks! >\n" +
                 "   --------------\n" +

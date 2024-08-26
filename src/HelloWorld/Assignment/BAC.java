@@ -3,15 +3,15 @@ package HelloWorld.Assignment;
 import java.util.*;
 
 public class BAC {
-    public static Scanner scanner = new Scanner(System.in);
-    public static Map<String, Double> BodyDistributionFactor = new HashMap<String, Double>(){
+    public Scanner scanner = new Scanner(System.in);
+    public Map<String, Double> BodyDistributionFactor = new HashMap<String, Double>(){
         {
             put("m", 0.7);
             put("f", 0.6);
             put("k", 0.8);
         }
     };
-    public static void Run(){
+    public void Run(){
         double c, A, r, m, V, €, p;
 
         System.out.print("Die masse der Person in [kg]: ");

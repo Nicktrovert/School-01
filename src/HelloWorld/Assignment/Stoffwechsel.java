@@ -3,8 +3,8 @@ package HelloWorld.Assignment;
 import java.util.Scanner;
 
 public class Stoffwechsel {
-    public static Scanner scanner = new Scanner(System.in);
-    public static void Run(){
+    public Scanner scanner = new Scanner(System.in);
+    public void Run(){
         double Weight, Height, Age;
 
         System.out.print("Gib das Gewicht an in [kg]: ");

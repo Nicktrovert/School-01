@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Summe
 {
-    public static Scanner scanner = new Scanner(System.in);
+    public Scanner scanner = new Scanner(System.in);
 
-    public static void Run(){
+    public void Run(){
         long Num1, Num2;
         double Result;
 
