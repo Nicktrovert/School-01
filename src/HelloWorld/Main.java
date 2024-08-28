@@ -9,9 +9,9 @@ import java.util.Scanner;
 
 public class Main {
     public static Scanner scanner = new Scanner(System.in);
-    public static Map<String, Object> assignments = new HashMap(){
+    public static Map<String, Object> assignments = new HashMap<>(){
         {
-            put("cowsay", (Object) new CowSay());
+            put("cowsay", new CowSay());
             put("benzin", new Benzin());
             put("stoffwechsel", new Stoffwechsel());
             put("summe", new Summe());
@@ -20,7 +20,15 @@ public class Main {
     };
 
     public static void main(String[] args) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+        System.out.print("Please enter the assignment you want to run: ");
         String ChosenAssignment = (scanner.next()).toLowerCase();
-        assignments.get(ChosenAssignment).getClass().getMethod("Run").invoke(assignments.get(ChosenAssignment));
+        System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+        if (assignments.containsKey(ChosenAssignment)){
+            assignments.get(ChosenAssignment).getClass().getMethod("Run").invoke(assignments.get(ChosenAssignment));
+        }
+        else{
+            System.out.println("\nInvalid assignment. Please try again!");
+            main(args);
+        }
     }
 }
