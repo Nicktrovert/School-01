@@ -1,6 +1,7 @@
 package HelloWorld;
 
 import HelloWorld.Assignment.*;
+import HelloWorld.Other.Calculator;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
@@ -16,6 +17,7 @@ public class Main {
             put("stoffwechsel", new Stoffwechsel());
             put("summe", new Summe());
             put("bac", new BAC());
+            put("calc", new Calculator());
         }
     };
 
