@@ -1,7 +1,7 @@
 package HelloWorld;
 
 import HelloWorld.Assignment.*;
-import HelloWorld.Other.Calculator;
+import HelloWorld.Other.*;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
@@ -14,9 +14,14 @@ public class Main {
         {
             put("cowsay", new CowSay());
             put("benzin", new Benzin());
+            put("benzin2", new Benzin2());
             put("stoffwechsel", new Stoffwechsel());
             put("summe", new Summe());
             put("bac", new BAC());
+            put("temperatur", new Temperatur());
+            put("warnung1", new Warnung1());
+            put("warnung4", new Warnung4());
+            put("warnung5", new Warnung5());
             put("calc", new Calculator());
         }
     };
