@@ -15,6 +15,7 @@ public class Main {
             put("cowsay", new CowSay());
             put("benzin", new Benzin());
             put("benzin2", new Benzin2());
+            put("bestell2", new Bestell2());
             put("stoffwechsel", new Stoffwechsel());
             put("summe", new Summe());
             put("bac", new BAC());
