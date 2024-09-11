@@ -25,6 +25,9 @@ public class Main {
             put("warnung4", new Warnung4());
             put("warnung5", new Warnung5());
             put("calc", new Calculator());
+            put("maximum", new maximum());
+            put("kehrwert", new Kehrwert());
+            put("zahlinfo", new ZahlInfo());
         }
     };
 
