@@ -7,7 +7,7 @@ public class ZahlInfo {
     public void Run(){
         try{
             System.out.print("Gib eine zahl ein: ");
-            int Input = scanner.nextInt();
+            int Input = Integer.parseInt(scanner.next());
             System.out.printf("Eingegebene zahl ist %s 0 und %s", Input == 0 ? "gleich" : Input < 0 ? "kleiner" : "groesser", Input % 2 == 0 ? "gerade" : "ungerade");
         } catch (Exception e){
             System.out.println("You did something wrong, try again!");
