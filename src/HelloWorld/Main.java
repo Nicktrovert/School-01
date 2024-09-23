@@ -16,6 +16,7 @@ public class Main {
             put("benzin", new Benzin());
             put("benzin2", new Benzin2());
             put("bestell2", new Bestell2());
+            put("brief", new Brief());
             put("kindergeld", new Kindergeld());
             put("stoffwechsel", new Stoffwechsel());
             put("summe", new Summe());
@@ -26,6 +27,7 @@ public class Main {
             put("warnung5", new Warnung5());
             put("calc", new Calculator());
             put("maximum", new maximum());
+            put("monname", new MonName());
             put("kehrwert", new Kehrwert());
             put("zahlinfo", new ZahlInfo());
         }
