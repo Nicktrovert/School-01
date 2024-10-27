@@ -1,4 +1,4 @@
-package HelloWorld.Tools;
+package HelloWorld.Data;
 
 public class Temperature {
     private final double _temp;

@@ -1,6 +1,6 @@
 package HelloWorld.Assignment;
 
-import HelloWorld.Tools.Temperature;
+import HelloWorld.Data.Temperature;
 
 import java.util.Scanner;
 

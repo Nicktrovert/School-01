@@ -18,6 +18,7 @@ public class Main {
             put("bestell2", new Bestell2());
             put("brief", new Brief());
             put("kindergeld", new Kindergeld());
+            put("körper", new Koerper());
             put("stoffwechsel", new Stoffwechsel());
             put("summe", new Summe());
             put("bac", new BAC());
