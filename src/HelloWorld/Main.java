@@ -13,12 +13,16 @@ public class Main {
     public static Map<String, Object> assignments = new HashMap<>(){
         {
             put("cowsay", new CowSay());
+            put("einsoderzwei", new einsoderzwei());
+            put("einsoderzweiv2", new EinsOderZweiV2());
             put("benzin", new Benzin());
             put("benzin2", new Benzin2());
             put("bestell2", new Bestell2());
             put("brief", new Brief());
             put("kindergeld", new Kindergeld());
             put("körper", new Koerper());
+            put("koerper", new Koerper());
+            put("sterne", new Sterne());
             put("stoffwechsel", new Stoffwechsel());
             put("summe", new Summe());
             put("bac", new BAC());
