@@ -4,8 +4,8 @@ import HelloWorld.Data.Shape;
 
 public class Cone implements Shape {
 
-    public double Radius = 0;
-    public double Height = 0;
+    public double Radius;
+    public double Height;
 
     public Cone(double radius, double height){
         Radius = radius;

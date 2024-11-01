@@ -4,9 +4,9 @@ import HelloWorld.Data.Shape;
 
 public class Cuboid implements Shape {
 
-    public double Width = 0;
-    public double Height = 0;
-    public double Depth = 0;
+    public double Width;
+    public double Height;
+    public double Depth;
 
     public Cuboid(double width, double height, double depth){
         Width = width;

@@ -22,8 +22,10 @@ public class Main {
             put("kindergeld", new Kindergeld());
             put("körper", new Koerper());
             put("koerper", new Koerper());
+            put("matrix", new Matrix());
             put("sterne", new Sterne());
             put("primzahl", new Primzahl());
+            put("ratespiel", new Ratespiel());
             put("rechnung", new Rechnung());
             put("stoffwechsel", new Stoffwechsel());
             put("summe", new Summe());
