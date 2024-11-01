@@ -23,6 +23,8 @@ public class Main {
             put("körper", new Koerper());
             put("koerper", new Koerper());
             put("sterne", new Sterne());
+            put("primzahl", new Primzahl());
+            put("rechnung", new Rechnung());
             put("stoffwechsel", new Stoffwechsel());
             put("summe", new Summe());
             put("bac", new BAC());
