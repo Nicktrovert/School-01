@@ -13,6 +13,7 @@ public class Main {
     public static Map<String, Object> assignments = new HashMap<>(){
         {
             put("cowsay", new CowSay());
+            put("dowhile", new doWhile());
             put("einsoderzwei", new einsoderzwei());
             put("einsoderzweiv2", new EinsOderZweiV2());
             put("benzin", new Benzin());
@@ -38,6 +39,7 @@ public class Main {
             put("maximum", new maximum());
             put("monname", new MonName());
             put("kehrwert", new Kehrwert());
+            put("whileschleife", new whileSchleife());
             put("zahlinfo", new ZahlInfo());
         }
     };
