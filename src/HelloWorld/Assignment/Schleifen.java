@@ -13,7 +13,7 @@ public class Schleifen {
                     Task1();
                     break;
                 case 3:
-                    Task3();
+                    Task3b();
                     break;
                 case 4:
                     Task4();
@@ -53,11 +53,56 @@ public class Schleifen {
             }
         }
     }
-    public void Task3(){
-
+    public void Task3b(){
+        int total = 0;
+        for (int x = 1; x <= 5; x++){
+            System.out.println(x*x);
+            total = total + (x*x);
+        }
+        System.out.println("Total ist: " + total);
     }
     public void Task4(){
+        System.out.print("1. Zahl: ");
+        int a = Integer.parseInt(scanner.nextLine());
 
+        System.out.print("2. Zahl: ");
+        int b = Integer.parseInt(scanner.nextLine());
+
+        System.out.println();
+
+        for (int i = 1; i <= a; i++){
+            for (int j = 1; j <= b; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+
+        for (int i = 1; i <= b; i++){
+            for (int j = 1; j <= a; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+
+        for (int i = 1; i <= a; i++){
+            for (int j = 1; j <= i; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+
+        for (int i = a; i > a-b; i--){
+            for (int j = 1; j <= i; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
     public void Task5(){
 
