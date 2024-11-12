@@ -132,5 +132,5 @@ total ist 30
 9
 16
 25
-Total ist 55
+Total ist: 55
 ```
