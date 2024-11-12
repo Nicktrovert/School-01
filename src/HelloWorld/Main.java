@@ -28,6 +28,7 @@ public class Main {
             put("primzahl", new Primzahl());
             put("ratespiel", new Ratespiel());
             put("rechnung", new Rechnung());
+            put("schleifen", new Schleifen());
             put("stoffwechsel", new Stoffwechsel());
             put("summe", new Summe());
             put("bac", new BAC());
