@@ -105,10 +105,25 @@ public class Schleifen {
         }
     }
     public void Task5(){
+        System.out.print("Geben sie die Breite des Rechtecks ein: ");
+        int width = Integer.parseInt(scanner.nextLine());
+        System.out.print("Geben sie die Höhe des Rechtecks ein: ");
+        int height = Integer.parseInt(scanner.nextLine());
 
+        for (int i = 0; i < height; i++){
+            System.out.print("*");
+            for (int j = 1; j < width-1; j++){
+                System.out.printf("%s", i == 0 || i == height-1 ? "*" : " ");
+            }
+            System.out.print("*\n");
+        }
     }
     public void Task6(){
-
+        for (int i = 1; i <= 10; i++){
+            for (int j = 1; j <= 10; j++){
+                System.out.printf("%s x %s = %s\n", j, i, i*j);
+            }
+        }
     }
     public void Task7(){
 
