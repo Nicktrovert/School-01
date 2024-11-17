@@ -126,6 +126,11 @@ public class Schleifen {
         }
     }
     public void Task7(){
-
+        for (int i = 8; i > 0; i--){
+            for (int j = 1; j <= 8; j++){
+                System.out.printf("%s%s ", /*Int to Ascii conversion*/((char)(64+j)), i);
+            }
+            System.out.println();
+        }
     }
 }
