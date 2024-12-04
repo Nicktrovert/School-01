@@ -25,6 +25,7 @@ public class Main {
             put("koerper", new Koerper());
             put("matrix", new Matrix());
             put("sterne", new Sterne());
+            put("twodimensionalarray", new TwoDimensionalArray());
             put("primzahl", new Primzahl());
             put("ratespiel", new Ratespiel());
             put("rechnung", new Rechnung());
