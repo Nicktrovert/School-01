@@ -1,5 +1,9 @@
 package HelloWorld.Assignment;
 
+import HelloWorld.Data.Stundenplan.Stundenplan;
+import HelloWorld.Data.Stundenplan.Subject;
+
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class TwoDimensionalArray {
@@ -14,15 +18,6 @@ public class TwoDimensionalArray {
                     break;
                 case 3:
                     Task3();
-                    break;
-                case 4:
-                    Task4();
-                    break;
-                case 5:
-                    Task5();
-                    break;
-                case 6:
-                    Task6();
                     break;
                 case 2:
                     Task2();
@@ -45,16 +40,7 @@ public class TwoDimensionalArray {
         }
     }
     public void Task1() {
-        int[][] chessboard = {
-                {0,0, 0, 0, 0, 0, 0, 0},
-                {0,0, 0, 0, 0, 0, 0, 0},
-                {0,0, 0, 0, 0, 0, 0, 0},
-                {0,0, 0, 0, 0, 0, 0, 0},
-                {0,0, 0, 0, 0, 0, 0, 0},
-                {0,0, 0, 0, 0, 0, 0, 0},
-                {0,0, 0, 0, 0, 0, 0, 0},
-                {0,0, 0, 0, 0, 0, 0, 0},
-        };
+        int[][] chessboard = new int[8][8];
 
         int[][] changedFields = new int[4][3];
 
@@ -80,32 +66,93 @@ public class TwoDimensionalArray {
             System.out.printf("\n%s:%s=%s", changedFields[i][0], changedFields[i][1], changedFields[i][2]);
         }
     }
-    public void Task2(){
-        int[][] a = new int[3][5];
 
-        for (int[] i: a) {
+    public void Print2DIntArray(int[][] array){
+        for (int[] i: array) {
             for (int j: i){
                 System.out.printf("%s ", j);
             }
             System.out.println();
         }
+        System.out.println("\n-----------------\n");
+    }
+
+    public void Task2(){
+        //a)
+
+        int[][] a = new int[3][5];
+
+        Print2DIntArray(a);
+
+        //b)
 
         for (int i = 0; i < a.length; i++){
             a[i][i] = 1;
         }
 
-        //todo - continue task
+        Print2DIntArray(a);
+
+        //c)
+
+        a = new int[3][5];
+
+        for (int i = 0; i < a.length; i++){
+            for (int j = 0; j < a[i].length; j++){
+                a[i][j] = j;
+            }
+        }
+
+        Print2DIntArray(a);
+
+        //d)
+
+        a = new int[3][5];
+
+        for (int i = 0; i < a.length; i++){
+            Arrays.fill(a[i], i);
+        }
+
+        Print2DIntArray(a);
+
+        //e)
+
+        a = new int[3][5];
+
+        for (int i = 0; i < a.length; i++){
+            for (int j = 0; j < a[i].length; j++){
+                a[i][j] = j + i;
+            }
+        }
+
+        Print2DIntArray(a);
     }
     public void Task3(){
+        int[][] a = {
+                {Subject.Mathemathik.ordinal(), Subject.Mathemathik.ordinal(), Subject.Informatik.ordinal(), Subject.Informatik.ordinal(), Subject.Informatik.ordinal(), Subject.Informatik.ordinal(), Subject.Informatik.ordinal(), Subject.Informatik.ordinal()},
+                {Subject.Englisch.ordinal(), Subject.Englisch.ordinal(), Subject.Informatik.ordinal(), Subject.Informatik.ordinal(), Subject.Religion.ordinal(), Subject.Religion.ordinal(), Subject.Deutsch.ordinal(), Subject.Deutsch.ordinal()},
+                {Subject.Informatik.ordinal(), Subject.Informatik.ordinal(), Subject.Mathemathik.ordinal(), Subject.Mathemathik.ordinal(), Subject.Informatik.ordinal(), Subject.Informatik.ordinal(), Subject.None.ordinal(), Subject.None.ordinal()},
+                {Subject.Deutsch.ordinal(), Subject.Deutsch.ordinal(), Subject.Informatik.ordinal(), Subject.Informatik.ordinal(), Subject.Politik.ordinal(), Subject.Politik.ordinal(), Subject.None.ordinal(), Subject.None.ordinal()},
+                {Subject.None.ordinal(), Subject.None.ordinal(), Subject.Physik.ordinal(), Subject.Physik.ordinal(), Subject.Englisch.ordinal(), Subject.Englisch.ordinal(), Subject.Förderunterricht.ordinal(), Subject.Förderunterricht.ordinal()},
+        };
+        Stundenplan stundenplan = new Stundenplan(a);
+        stundenplan.Print();
 
-    }
-    public void Task4(){
-
-    }
-    public void Task5(){
-
-    }
-    public void Task6(){
-
+        while(true){
+            System.out.println("\n----------------\nBefehle:\n1. Stundenplan ausgeben.\n2. Stunde eintragen.\n3. Programm beenden.\n----------------\nWas möchtest du machen? (1-3)");
+            int Input = Integer.parseInt(scanner.nextLine());
+            switch (Input){
+                case 1:
+                    stundenplan.Print();
+                    break;
+                case 2:
+                    stundenplan.Edit();
+                    stundenplan.Print();
+                    break;
+                case 3:
+                    return;
+                default:
+                    throw new IllegalArgumentException();
+            }
+        }
     }
 }
