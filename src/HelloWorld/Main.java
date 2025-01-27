@@ -43,6 +43,7 @@ public class Main {
             put("kehrwert", new Kehrwert());
             put("whileschleife", new whileSchleife());
             put("zahlinfo", new ZahlInfo());
+            put("struktogramm", new Struktogramm());
         }
     };
 
