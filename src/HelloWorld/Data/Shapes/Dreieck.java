@@ -1,15 +1,15 @@
 package HelloWorld.Data.Shapes;
 
 public class Dreieck {
-    public double seiteA;
+    private double seiteA;
     public void SetseiteA(double seiteA){
         this.seiteA = seiteA;
     }
-    public double seiteB;
+    private double seiteB;
     public void SetseiteB(double seiteB){
         this.seiteB = seiteB;
     }
-    public double seiteC;
+    private double seiteC;
     public void SetseiteC(double seiteC)
     {
         this.seiteC = seiteC;

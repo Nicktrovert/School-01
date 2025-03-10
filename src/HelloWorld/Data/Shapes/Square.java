@@ -1,7 +1,7 @@
 package HelloWorld.Data.Shapes;
 
 public class Square {
-    public double SeiteA;
-    public double SeiteB;
+    private double SeiteA;
+    private double SeiteB;
 
 }

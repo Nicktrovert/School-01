@@ -4,7 +4,7 @@ import HelloWorld.Data.Shape;
 
 public class Cuboid implements Shape {
 
-    public double Width;
+    private double Width;
     public void setWidth(double Width){
         this.Width = Width;
     }

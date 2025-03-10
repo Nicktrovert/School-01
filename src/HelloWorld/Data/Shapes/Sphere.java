@@ -4,7 +4,7 @@ import HelloWorld.Data.Shape;
 
 public class Sphere implements Shape {
 
-    public double Radius;
+    private double Radius;
     public void setRadius(double Radius){
         this.Radius = Radius;
     }

@@ -4,7 +4,7 @@ import HelloWorld.Data.Shape;
 
 public class Cube implements Shape {
 
-    public double Length;
+    private double Length;
 
     public void setLength(double Length){
         this.Length = Length;

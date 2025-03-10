@@ -2,15 +2,39 @@ package HelloWorld.Data.Shapes;
 
 import HelloWorld.Data.Shape;
 
+import java.util.Date;
+import java.util.Scanner;
+
 public class Cone implements Shape {
 
-    public double Radius;
+    private double Radius;
 
     public void setRadius(double Radius){
         this.Radius = Radius;
     }
+    public void setRadius(int Radius) { this.Radius = Radius; }
+    public void setRadius(String Radius){
+        this.Radius = Double.parseDouble(Radius);
+    }
+    public void setRadius(boolean Radius){
+        if (Radius){
+            this.Radius = 1;
+        } else{
+            this.Radius = 0;
+        }
+    }
+    public void setRadius(Date Radius){
+        this.Radius = Double.parseDouble(Radius.getTime() + "." + Radius.getTime());
+    }
+    public void setRadius(Cone cone){
+        this.Radius = cone.Radius;
+    }
+    public void setRadius(Scanner scanner){
+        System.out.println("enter a radius: ");
+        this.Radius = scanner.nextDouble();
+    }
 
-    public double Height;
+    private double Height;
 
     public void setHeight(double Height){
         this.Height = Height;

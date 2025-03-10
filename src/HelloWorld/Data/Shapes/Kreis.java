@@ -1,7 +1,7 @@
 package HelloWorld.Data.Shapes;
 
 public class Kreis{
-    public double radius;
+    private double radius;
     public void SetRadius(double radius) {
         this.radius = radius;
     }
