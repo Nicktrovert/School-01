@@ -5,8 +5,17 @@ import HelloWorld.Data.Shape;
 public class Cuboid implements Shape {
 
     public double Width;
+    public void setWidth(double Width){
+        this.Width = Width;
+    }
     public double Height;
+    public void setHeight(double Height){
+        this.Height = Height;
+    }
     public double Depth;
+    public void setDepth(double Depth){
+        this.Depth = Depth;
+    }
 
     public Cuboid(double width, double height, double depth){
         Width = width;

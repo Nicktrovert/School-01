@@ -6,6 +6,10 @@ public class Cube implements Shape {
 
     public double Length;
 
+    public void setLength(double Length){
+        this.Length = Length;
+    }
+
     public Cube(double length){
         Length = length;
     }
