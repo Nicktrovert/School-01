@@ -5,10 +5,16 @@ import HelloWorld.Data.Shape;
 public class Cylinder implements Shape {
 
     private double Radius;
+    public double getRadius(){
+        return Radius;
+    }
     public void setRadius(double Radius){
         this.Radius =Radius;
     }
     private double Height;
+    public double getHeight(){
+        return Height;
+    }
     public void setHeight(double Height){
         this.Height = Height;
     }

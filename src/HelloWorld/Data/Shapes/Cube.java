@@ -5,6 +5,9 @@ import HelloWorld.Data.Shape;
 public class Cube implements Shape {
 
     private double Length;
+    public double getLength(){
+        return Length;
+    }
 
     public void setLength(double Length){
         this.Length = Length;
