@@ -8,4 +8,8 @@ public class Time {
     public void setSec(int sec){
         this.sec = sec;
     }
+
+    public Time(int sec){
+        this.sec = sec;
+    }
 }

@@ -9,6 +9,10 @@ public class Kreis{
         this.radius = radius;
     }
 
+    public Kreis(double rad){
+        radius = rad;
+    }
+
     public double GetArea(){
         return Math.PI * (radius * radius);
     }

@@ -24,6 +24,12 @@ public class Dreieck {
         this.seiteC = seiteC;
     }
 
+    public Dreieck(double a, double b, double c){
+        seiteA = a;
+        seiteB = b;
+        seiteC = c;
+    }
+
     public double GetArea(){
         double s = GetUmfang() / 2;
         return Math.sqrt(s * (s - seiteA) * (s - seiteB) * (s - seiteC));
